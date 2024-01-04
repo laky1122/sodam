@@ -1,0 +1,209 @@
+
+
+/* ----------- 이후 추가할 것들(예정) ----------- */
+/*      - 드래그시 긁은 부분 배경 색 변경         */
+
+
+/*----폰트------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+
+/*-------------------------------------------*/
+
+:root{
+
+    --color1: #d3a672;
+    --color1A: #efe3d6;
+    --color2: #FFF;
+    --color3:  #917867;
+    --hcolor: #a8663a; /*<h1>~<h3>컬러(변경 가능성 있음)*/
+
+    /**백그라운드*/
+    --bgcolor: #FFF; 
+    --linecolor: #F1D3CA; /*border 선에 쓰이는 색*/
+    --hr--color: #d76a05; /*<hr>컬러*/
+
+    --width1: 1080px; /*전체화면 1346px 이상일 때의 좌우크기*/
+    --width3: 767px; /*전체화면 1346px 이하일 때의 좌우크기*/
+    /* 이전 --width3: 744px; */
+
+    --paddingsize: 110px; /*main width(--width1 이상)에 따른 기본 padding*/
+    --paddingsizeM: 70px; /*main width --width1 미만*/
+    --paddingsizeS: 63px; /*main width --width3 미만*/
+
+
+}
+
+
+
+/*-------------------------------------------*/
+
+
+
+/* 전체 기본 폰트 지정(google font)*/
+/* ul, a태그 스타일 없앰 */
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*body 박스의 padding과 margin을 0으로 잡고*/
+/* 기본 폰트 색과 뒤로 깔릴 백그라운드 색을 지정함. */
+body{
+
+    /*모바일 사이즈 관련하여 여백 생기지 않도록 설정한 부분*/
+    width: 100%; 
+    overflow-x: hidden;
+
+    /*기본적인 설정*/
+    padding: 0;
+    margin: 0;
+    background-color: var(--color2);
+    color: var(--color-2);
+}
+
+article{
+    overflow-wrap: break-word;
+}
+
+
+
+/*-------------------------------------------*/
+
+
+
+main{
+    position: relative; /*nav 때문에 설정*/
+    max-width: var(--width1);
+    margin: 0 auto;
+    padding: 40px 0 60px 0;
+    background-color: var(--bgcolor);
+}
+
+
+footer > div{
+    max-width: var(--width1);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer > div > ul{
+    padding-left: 0;
+    display: flex;
+}
+
+footer > div > ul > li{
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid var(--color2);
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+footer > div > ul :first-child{
+    padding-left: 0;
+}
+
+footer > div > ul :last-child{
+    border-right: 0;
+}
+
+/*----양식----------------------------------*/
+
+
+main h1,h2,h3{
+    color: var(--hcolor);
+}
+
+h1,h2{
+    font-family: 'Orbit', sans-serif;
+    padding: 0 var(--paddingsize);
+}
+
+h1{
+    font-size: 2.3em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+article{
+    padding: 0 var(--paddingsize);
+    margin-bottom: 50px;
+}
+
+hr{
+    color: var(--hr--color);
+    border-color: var(--hr--color);
+    background-color: var(--hr--color)
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: var(--hcolor);
+}
+
+input[type=submit],
+input[type=button],
+button{
+    padding: 8px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color1);
+    border-radius: 8%;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover{
+    padding: 8px;
+    background-color: var(--color3);
+    color: var(--color2);
+    border: 1px solid var(--color3);
+    cursor: pointer;
+}
+
+
+/*----border를 양식에 맞춰 그려주는 클래스----*/
+
+
+.box{
+    border: 1px solid var(--linecolor);
+    border-radius: 20px;
+
+    padding: 14px;
+}
+
+
+/*---스크롤바 --------------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color1A);
+    border-radius: 10px;
+}
+
+
+/*-----------------------------------*/
+
+::selection{
+    background-color: var(--color3);
+    color: var(--bgcolor);
+}

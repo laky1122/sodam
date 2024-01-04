@@ -1,0 +1,21 @@
+
+.c{
+    margin-top: 44px;
+    padding: 88px 0 30px 0;
+    min-height: 10px;
+    border-radius: 10px;
+    background-color: var(--color1);
+    /* 따로 지정할 수 있게 바꿔야함!!!!!!!!!!!! */
+    background-image: url(../../img/category2/backg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.c > p{
+    padding: 0 var(--paddingsize);
+    color: var(--color2);
+    font-size: 2em;
+    font-weight: bolder;
+}

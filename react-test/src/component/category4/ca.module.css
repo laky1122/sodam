@@ -1,0 +1,155 @@
+/* 기존 스타일 유지 */
+/* 기존 스타일 유지 */
+
+.mainTitle {
+    text-align: center;
+}
+
+.categoryTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.placeContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2개의 열을 가로로 */
+    grid-template-rows: repeat(1, 1fr); /* 2개의 행을 세로로 */
+    gap: 10px; /* 엘리먼트 간 간격 설정 */
+}
+
+.placeContent .imgFile {
+    margin-top: 9px;
+    grid-column: 1 / 2; /* 1열에 배치 */
+    grid-row: 1 / 2; /* 1부터 2행까지 차지 */
+}
+
+.placeContent .areaList {
+    grid-column: 2 / 2; /* 2열에 배치 */
+    grid-row: 1 / 1; /* 1부터 2행까지 차지 */
+}
+
+.placeContent .guide {
+    grid-column: 2 / 3; /* 2열에 배치 */
+    grid-row: 2 / 2; /* 1부터 2행까지 차지 */
+}
+
+/* 가이드 스타일 */
+.placeContent .guide {
+    background-color: #f2f0ed;
+    border: 1px solid #f2f0ed;
+    border-radius: 20px;
+    display: grid; /* 변경: float 대신 grid 사용 */
+    grid-template-columns: 1fr; /* 변경: 1개의 열을 사용 */
+    gap: 10px; /* 변경: 엘리먼트 간 간격 설정 */
+}
+
+.placeContent .guide img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.guide .guideText {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #3f3b3a;
+}
+
+.placeContent .guide .downloadButton {
+    display: flex; /* 변경: Flex 레이아웃 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    margin: 20px auto 10px;
+    padding: 15px 30px;
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3b3a;
+    background: #fff;
+    box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.placeContent .guide .downloadButton span {
+    width: 120px; /* 원하는 너비로 조정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬로 변경 */
+}
+
+.placeContent .guide .downloadButton:after {
+    content: "";
+    width: 24px;
+    height: 28px;
+    background: url(../../img/category4/Category1/guide-down.png);
+    
+    margin-left: 10px; /* 원하는 간격으로 조정 */
+}
+
+.imgFile img {
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소에 맞게 설정 */
+    height: auto; /* 이미지의 높이를 자동으로 조절하여 가로세로 비율을 유지 */
+    display: block; /* 인라인 요소의 간격을 없애기 위해 블록 요소로 설정 */
+    border-radius: 10px;
+}
+
+.area {
+    background-color: #F0EADF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    float: left;
+    clear: none;
+    text-align: center;
+    margin: 10px;
+    width: calc(50% - 20px);
+}
+
+.area:nth-child(2n) {
+    margin-right: 10px;
+}
+
+.area p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 미디어 쿼리 스타일 유지 */
+/* 미디어 쿼리 스타일 조정 */
+@media (max-width: 1440px) {
+    .placeContent {
+        grid-template-columns: repeat(1, 1fr); /* 1개의 열을 가로로 */
+    }
+    .placeContent .imgFile,
+    .placeContent .areaList,
+    .placeContent .guide {
+        grid-column: auto; /* 원래 위치로 설정 */
+        grid-row: auto; /* 원래 위치로 설정 */
+    }
+
+    .imgFile {
+        display: inline-block;
+        border: 1px solid #F0EADF;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1246px) {
+    /* 1246px 이하일 때 적용되는 스타일 */
+    .placeContent .imgFile {
+        grid-row: auto; /* 원래 위치로 설정 */
+    }
+    .placeContent .areaList {
+        grid-row: auto; /* 원래 위치로 설정 */
+    }
+}
+
+@media (max-width: 767px) {
+    /* 767px 이하일 때 적용되는 스타일 */
+}

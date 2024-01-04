@@ -1,0 +1,72 @@
+.hheader * {
+    margin: 0;
+}
+
+.hheader a {
+    text-decoration: none;
+    color: var(--color1);
+    font-family: 'Orbit', sans-serif;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--color3);
+    }
+}
+
+#bmenu {
+    position: fixed;
+    right: 0;
+}
+
+.hheader {
+    height: 63px;
+    width: 100%;
+    background-color: var(--bgcolor);
+    display: flex;
+    width: 100%;
+    overflow-x: visible;
+    align-items: center;
+    border-bottom: 1px solid var(--linecolor);
+    position: fixed;
+    /* 수정: 헤더를 화면 상단에 고정 */
+    top: 0;
+    /* 수정: 헤더를 화면 상단에 고정 */
+    left: 0;
+    /* 수정: 헤더를 화면 상단에 고정 */
+    right: 0;
+    /* 수정: 헤더를 화면 상단에 고정 */
+    z-index: 1000;
+
+    .hnav {
+        width: var(--width1);
+        display: flex;
+
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+
+    }
+}
+
+/* 로고 이미지 정렬 */
+.hheader .logo a  {
+    display: flex;
+    align-items: center;
+
+} 
+
+.hheader .logo a img{
+    /* height: 22px; */
+    transform: translateY(1px);
+}
+/* 로고 이미지 정렬 끝 */
+
+
+@media screen and (max-width: 767px) {
+
+    .hheader .logo {
+        text-align: center;
+        margin: 0 auto;
+    }
+}

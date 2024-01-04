@@ -1,0 +1,39 @@
+/*미디어쿼리관련? 클래스 관련 css도 다 여기서 쓰면 될듯하다.*/
+
+
+
+
+@media (width < 1346px) {
+  main, nav {
+      max-width: var(--width3);
+  }
+  footer > div{
+      max-width: var(--width3);
+  }
+  :root{
+      --paddingsize: var(--paddingsizeM);
+  }
+}
+@media (width < 1246px){
+
+}
+@media (width < 767px) { /*모바일 사이즈*/
+  .c > p{
+      text-align: center;
+  }
+  :root{
+      --paddingsize: var(--paddingsizeS);
+  }
+  
+  footer > div {
+    padding: 0 var(--paddingsizeS) 20px ;
+  }
+  footer > div > ul{
+    margin: 0;
+  }
+  footer > div > ul > li {
+    display: none;
+  }
+}
+
+

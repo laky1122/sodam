@@ -1,0 +1,27 @@
+
+.topbutton{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1280px;
+    margin: 0 auto 5px auto;
+    /* position: fixed;
+    bottom: 30px;
+    right: 8%; */
+
+    position: sticky;
+    bottom: 50px;
+}
+
+.topbutton button{
+    width: 50px;
+    display: block;
+
+}
+
+@media (width < 1346px) {
+  .topbutton{
+    margin-right: 10%; 
+    width: auto; 
+  }
+}

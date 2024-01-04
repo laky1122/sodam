@@ -1,0 +1,36 @@
+.post img{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+}
+        
+.post #page{
+    padding-left: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.post #page b{
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+}
+
+.post #page a{
+    word-wrap: break-word;
+}
+
+/*-------------------*/
+
+.post table{
+    background-color: #fff;
+    border: 1px solid var(--color3);
+    border-spacing: 0px;
+}
+
+.post table th,td{
+    border: 1px solid var(--color3);
+    padding: 4px 10px;
+    border-collapse : collapse;
+}

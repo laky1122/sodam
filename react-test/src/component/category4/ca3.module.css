@@ -1,0 +1,232 @@
+.mainTitle {
+    text-align: center;
+}
+
+.categoryTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.placeView .placeTable table {
+    width: 100%;
+    border-top: 2px solid #222;
+}
+
+.placeView .placeTable th {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background-color: #f2f0ed;
+}
+
+.placeView .placeTable td {
+    font-size: 16px;
+    color: #666;
+}
+
+.colgroup {
+    width: 160px;
+
+}
+
+.placeView dd.item .title span {
+    padding: 9px 0;
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: #313a46;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.placeView .placeTable th,
+.placeView .placeTable td {
+    padding: 17px 30px 18px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.placeView>dl>dd {
+    padding: 40px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    
+    /* background: url(../../img/category4/front/cont/detail-dash.png) repeat-x bottom; */
+    border-bottom: 1px solid black;
+}
+
+.placeView dd.item .title {
+    display: table-cell;
+    width: 160px;
+    vertical-align: top;
+}
+
+.placeView dd.item .more {
+    padding-left: 30px;
+    display: table-cell;
+    width: calc(100% - 160px);
+    vertical-align: middle;
+}
+
+.mainProduct {
+    margin: 0 -7.5px;
+    font-size: 0;
+}
+
+.mainProduct li {
+    margin-bottom: 30px;
+    padding: 0 7.5px;
+    display: inline-block;
+    width: 33.3333%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.mainProduct li .itemWrap {
+    border: 1px solid #bfbfbf;
+}
+
+.mainProduct li .brewImg {
+    padding-top: 85%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainProduct li .productInfo {
+    padding: 25px 0 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.mainProduct li .productInfo .brewName {
+    font-size: 20px;
+    color: #333;
+}
+
+.mainProduct li .productInfo .brewNum {
+    font-size: 0;
+}
+
+.mainProduct li .productInfo .brewNum span {
+    position: relative;
+    padding: 0 12px 0 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+}
+
+.mainProduct li .brewImg span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mainProduct li .brewImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btnArea {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#place {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.subject {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.frontImg img {
+    width: 100%;
+}
+
+/*.placeView 추가함*/
+.placeView dl dd {
+    margin: auto;
+    padding: 20px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+} 
+
+
+@media (width < 1346px) {
+
+    .frontImg img {
+        -ms-interpolation-mode: nearest-neighbor;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brewImg img {
+        display: inline-block;
+        border: 1px solid #F0EADF;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (width < 1246px) {
+
+
+    .frontImg img {
+        -ms-interpolation-mode: nearest-neighbor;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brewImg img {
+        display: inline-block;
+        border: 1px solid #F0EADF;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (width < 767px) {
+    /*모바일 사이즈*/
+
+    .frontImg img {
+        -ms-interpolation-mode: nearest-neighbor;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brewImg img {
+        display: inline-block;
+        border: 1px solid #F0EADF;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+}
